@@ -1,0 +1,176 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.topbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px 20px 14px;
+  border-bottom: 1px solid var(--border);
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brandLogo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.brandTitle {
+  font-size: 18px;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.brandSubtitle {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text);
+}
+
+.field select {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--social-bg);
+  color: var(--text-h);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.apiHint {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text);
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  border-radius: 10px;
+  padding: 8px 10px;
+  max-width: 340px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.chatList {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bubble {
+  max-width: 78%;
+  border-radius: 14px;
+  padding: 12px 12px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.bubbleBot {
+  align-self: flex-start;
+  background: rgba(244, 243, 236, 0.55);
+  color: var(--text-h);
+}
+
+.bubbleUser {
+  align-self: flex-end;
+  background: var(--accent-bg);
+  color: var(--text-h);
+  border-color: var(--accent-border);
+}
+
+.bubbleText {
+  margin: 0;
+  font: 14px/150% var(--sans);
+  white-space: pre-wrap;
+}
+
+.composer {
+  display: flex;
+  gap: 10px;
+  padding: 14px 20px 18px;
+  border-top: 1px solid var(--border);
+}
+
+.composerInput {
+  flex: 1;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  border-radius: 12px;
+  padding: 12px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.composerInput:focus {
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 3px var(--accent-bg);
+}
+
+.composerButton {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.composerButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.typing {
+  font-size: 14px;
+}
+
+.error {
+  padding: 10px 20px 18px;
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+.warning {
+  padding: 10px 20px 0;
+  color: #92400e;
+  font-size: 13px;
+}
